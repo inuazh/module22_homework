@@ -86,3 +86,41 @@ body {
     font-size: 14px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+    .chat-container {
+        max-width: 80%;
+        padding: 10px;
+    }
+    .chat-header {
+        margin-bottom: 10px;
+    }
+    .chat-header img {
+        width: 40px;
+        height: 40px;
+    }
+    .chat-header h2 {
+        font-size: 1.2rem;
+    }
+    .chat-body {
+        height: 200px;
+    }
+    .chat-message img {
+        width: 20px;
+        height: 20px;
+    }
+    .chat-message p {
+        font-size: 0.9rem;
+    }
+    .chat-input {
+        display: flex;
+        flex-direction: column;
+    }
+    .chat-input input {
+        margin-bottom: 10px;
+    }
+
+    #location-btn{
+        margin: 5px;
+    }
+}
