@@ -7,6 +7,6 @@
 
 [submodule "3and4__geo_and_other"]
 
-[submodule "random-dragndrop"]
+[submodule "drag_and_drop"]
 	path = random-dragndrop
 	url = https://github.com/inuazhjs/random-dragndrop
