@@ -6,6 +6,7 @@ const chatBody = document.querySelector('.chat-body');
 const chatInput = document.querySelector('.chat-input');
 const messageInput = chatInput.querySelector('input[type="text"]');
 const sendButton = chatInput.querySelector('#send-btn');
+const locationButton = chatInput.querySelector('#location-btn');
 
 // обработчик клика по кнопке отправки сообщения
 sendButton.addEventListener('click', () => {
@@ -35,3 +36,20 @@ socket.addEventListener('message', (event) => {
       
 
 });
+
+locationButton.addEventListener('click', () => {
+    // проверяем, поддерживается ли гео-локация в браузере
+    if ('geolocation' in navigator) {
+      // запрашиваем текущую гео-локацию
+      navigator.geolocation.getCurrentPosition((position) => {
+        // создаем ссылку на openstreetmap.org с текущей гео-локацией
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+        const mapUrl = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
+        // отправляем ссылку на сервер через WebSocket
+        socket.send(mapUrl);
+      });
+    } else {
+      alert('Geolocation is not supported in this browser');
+    }
+  });
