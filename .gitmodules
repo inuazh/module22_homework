@@ -3,3 +3,10 @@
 [submodule "3and4__geo_and_other"]
 	path = 3and4__geo_and_other
 	url = https://github.com/inuazhjs/geo-and-other-userinfo
+
+
+[submodule "3and4__geo_and_other"]
+
+[submodule "random-dragndrop"]
+	path = random-dragndrop
+	url = https://github.com/inuazhjs/random-dragndrop
