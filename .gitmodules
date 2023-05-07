@@ -8,5 +8,5 @@
 [submodule "drag_and_drop"]
 
 [submodule "drag_and_drop"]
-	path = random-dragndrop
+	path = drag_and_drop
 	url = https://github.com/inuazhjs/random-dragndrop
