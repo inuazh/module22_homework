@@ -5,7 +5,7 @@
 	url = https://github.com/inuazhjs/geo-and-other-userinfo
 
 
-[submodule "3and4__geo_and_other"]
+[submodule "drag_and_drop"]
 
 [submodule "drag_and_drop"]
 	path = random-dragndrop
